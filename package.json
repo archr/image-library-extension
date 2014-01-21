@@ -1,0 +1,12 @@
+{
+  "name": "image-library",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-crx": "~0.3.3",
+    "grunt": "~0.4.2",
+    "grunt-multiresize": "~0.3.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-coffee": "~0.8.2"
+  }
+}
