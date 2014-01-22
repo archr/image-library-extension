@@ -19,8 +19,10 @@ module.exports = (grunt) ->
 
     crx: 
       dev:
-        src: 'ext/'
-        dest: 'dist/'
+        src: "ext/"
+        dest: "dist/"
+        privateKey: ".ssh/ext.pem"
+        baseURL: 'http://198.199.115.150:4000/'
 
 
   grunt.loadNpmTasks 'grunt-contrib-coffee'
@@ -29,4 +31,8 @@ module.exports = (grunt) ->
   
 
   grunt.registerTask 'default', ['watch:coffee']
-  grunt.registerTask 'crx', ['crx:dev']
+  grunt.registerTask 'distribution', ['crx:dev']
+  grunt.registerTask 'compile', ['coffee:dev']
+
+  return 
+

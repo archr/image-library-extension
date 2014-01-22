@@ -1,5 +1,6 @@
 class ImageUploader
-	url = 'http://si-dev.com:4000/'
+	url = 'http://198.199.115.150:4000/api/images'
+	#url = 'http://si-dev.com:4000/'
 	
 	showImages =(e) ->
 		json = JSON.parse(e.target.responseText)

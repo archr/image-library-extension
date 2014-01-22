@@ -2,7 +2,7 @@
 	"name":"ImageLibrary",
 	"manifest_version": 2,
 	"description": "Image Library",
-	"version": "0.1",
+	"version": "0.2",
 	"browser_action": {
     "default_icon": "img/icon.png",
     "default_popup": "popup.html"
