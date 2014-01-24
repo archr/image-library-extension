@@ -1,18 +1,32 @@
 imageUploader = new ImageUploader()
 
 showPageLibrary = ->
-  w = 440
-  h = 220
-  left = (screen.width/2)-(w/2)
-  top = (screen.height/2)-(h/2)
+  chrome.tabs.executeScript null, 
+    file: "vendor/jquery/jquery.js"
+  , ->
+    chrome.tabs.insertCSS null,
+      file: "vendor/fancybox/source/jquery.fancybox.css",
+    , ->
+      chrome.tabs.executeScript null,
+        file: "vendor/fancybox/source/jquery.fancybox.pack.js"
+      , () ->
+        chrome.tabs.executeScript null,
+          file: "js/gallery.js"
+        , ->
+          console.log('1dsjad')
+
+  # w = 800
+  # h = 300
+  # left = (screen.width/2)-(w/2)
+  # top = 100
   
-  chrome.windows.create 
-    url: 'gallery.html'
-    type: 'popup'
-    width: w
-    height: h
-    left: left
-    top: top
+  # chrome.windows.create 
+  #   url: 'gallery.html'
+  #   type: 'popup'
+  #   width: w
+  #   height: h
+  #   left: left
+  #   top: top
 
 chrome.contextMenus.create
   title: "Save Image"

@@ -1,0 +1,16 @@
+{
+  "name": "ext",
+  "version": "0.0.3",
+  "homepage": "https://github.com/berser/image-library-extension",
+  "authors": [
+    "Antonio <berser.ar@gmail.com>"
+  ],
+  "description": "Image Library",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "fancybox": "~2.1.5",
+    "jquery": "~2.0.3",
+    "angular": "~1.2.9"
+  }
+}

@@ -11,7 +11,17 @@
   	"scripts": ["js/imageUploader.js", "js/menu.js"]
   },
   "web_accessible_resources": [
-  ],
+    "js/gallery.js",
+    "vendor/jquery/jquery.js", 
+    "vendor/fancybox/source/jquery.fancybox.css",
+    "vendor/fancybox/source/jquery.fancybox.pack.js",
+    "vendor/fancybox/source/fancybox_loading.gif",
+    "vendor/fancybox/source/fancybox_loading@2x.gif",
+    "vendor/fancybox/source/blank.gif",
+    "vendor/fancybox/source/fancybox_overlay.png",
+    "vendor/fancybox/source/fancybox_sprite.png",
+    "vendor/fancybox/source/fancybox_sprite@2x.png"
+  ], 
   "icons": {
     "16": "img/icon-16.png"
   },
@@ -19,6 +29,7 @@
     "http://198.199.115.150:4000/",
     "contextMenus",
     "notifications",
-    "storage"
+    "storage",
+    "activeTab"
   ]
 }
