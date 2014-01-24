@@ -2,18 +2,23 @@
 	"name":"ImageLibrary",
 	"manifest_version": 2,
 	"description": "Image Library",
-	"version": "0.2",
+	"version": "0.4",
 	"browser_action": {
-    "default_icon": "img/icon.png",
+    "default_icon": "img/icon-38.png",
     "default_popup": "popup.html"
   },
   "background": {
   	"scripts": ["js/imageUploader.js", "js/menu.js"]
   },
+  "web_accessible_resources": [
+  ],
+  "icons": {
+    "16": "img/icon-16.png"
+  },
   "permissions": [
     "http://198.199.115.150:4000/",
-    "http://si-dev.com:4000/",
     "contextMenus",
-    "notifications"
+    "notifications",
+    "storage"
   ]
 }
